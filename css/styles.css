@@ -1,0 +1,70 @@
+/*----------------------------------- 
+Base Styling
+------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  margin: 50px auto 50px auto;
+}
+
+/*----------------------------------- 
+Modal
+------------------------------------*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/*----------------------------------- 
+ Grid
+------------------------------------*/
+
+.grid-container {
+  display: grid;
+  max-width: 900;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(32%, 32%));
+  grid-gap: 15px;
+}
+
+.card {
+  background-color: grey;
+  height: 200px;
+  length: 500px;
+}
