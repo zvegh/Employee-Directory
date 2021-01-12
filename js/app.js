@@ -6,6 +6,17 @@ const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.modal-content');
 const modalColose = document.querySelector('.modal-close');
 
+// Jquery
+// had to import jquery because the street value in the modal was [object Object]
+// then ${street} => ${street.name} ${street.number}
+$.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+    }
+  });
+
 // Fetch data from API
 fetch(urlAPI)
     .then(res => res.json())
@@ -55,7 +66,7 @@ fetch(urlAPI)
                 <p class="address">${city}</p>
                 <hr/>
                 <p>${phone}</p>
-                <p class="address">${street}, ${state}, ${postcode}</p>
+                <p class="address">${street.name} ${street.number}, ${state} ${postcode}</p>
                 <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
             </div>
         `;
