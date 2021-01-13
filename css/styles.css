@@ -11,9 +11,15 @@ Base Styling
 
 body {
   position: relative;
-  max-width: 1000px;
+  max-width: 1980;
   margin: auto;
   margin: 50px auto 50px auto;
+}
+
+h1 {
+  margin: 50px auto 50px 9%;
+  color: rgb(74, 74, 74);
+  text-transform: uppercase;
 }
 
 /*----------------------------------- 
@@ -57,14 +63,92 @@ Modal
 
 .grid-container {
   display: grid;
-  max-width: 900;
+  max-width: 1700px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(32%, 32%));
-  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(30%, auto));
+  grid-gap: 35px;
+  align-content: space-evenly;
+  margin: auto;
 }
 
 .card {
-  background-color: grey;
   height: 200px;
-  length: 500px;
+  length: 300px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+}
+
+/*----------------------------------- 
+ Card
+------------------------------------*/
+
+.card {
+  overflow: auto;
+  display: grid;
+  grid: "avatar text";
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.card .avatar {
+  float: left;
+  border-radius: 50%;
+  margin: auto;
+  grid-area: avatar;
+}
+
+.card .text-container {
+  float: right;
+  display: inline-block;
+  grid-area: text;
+  line-height: 2em;
+}
+
+.card .name {
+  color: rgb(64, 74, 81);
+}
+
+.card .text-container p {
+  color: rgb(136, 142, 146);
+}
+
+/*----------------------------------- 
+ Employees
+------------------------------------*/
+
+.modal {
+  border: solid 1px rgb(223, 223, 223);
+  border-radius: 5px;
+}
+
+.modal-close {
+  border: none;
+  background-color: transparent;
+  margin: 10px 20px auto auto;
+}
+
+.modal-content .avatar {
+  border-radius: 50%;
+}
+
+.modal-content h2 {
+  color: rgb(64, 74, 81);
+}
+
+.modal-content .email {
+  margin: 10px auto;
+  color: rgb(138, 143, 147);
+}
+
+.modal-content hr {
+  margin: 30px auto;
+  padding: 10px auto;
+  width: 85%;
+  color: rgb(138, 143, 147);
+  font-weight: 100;
+}
+
+.modal-content p {
+  line-height: 2em;
+  color: rgb(138, 143, 147);
 }
