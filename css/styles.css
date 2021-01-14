@@ -67,7 +67,7 @@ Modal
   display: grid;
   max-width: 1700px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
+  grid-template-columns: repeat(auto-fit, 20rem);
   grid-gap: 35px;
   align-content: space-evenly;
   margin: auto;
@@ -104,6 +104,7 @@ Modal
   display: inline-block;
   grid-area: text;
   line-height: 2em;
+  word-break: break-all;
 }
 
 .card .name {
