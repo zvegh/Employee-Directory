@@ -11,13 +11,13 @@ Base Styling
 
 body {
   position: relative;
-  max-width: 1980;
+  max-width: 1980px;
   margin: auto;
   margin: 50px auto 50px auto;
 }
 
 h1 {
-  margin: 50px auto 50px 3%;
+  margin: 50px auto 50px 6%;
   color: rgb(74, 74, 74);
   text-transform: uppercase;
   font-size: 1.1em;
@@ -75,7 +75,6 @@ Modal
 
 .card {
   height: 200px;
-  length: 300px;
   border: 1px solid rgb(223, 223, 223);
   border-radius: 5px;
 }
@@ -87,7 +86,7 @@ Modal
 .card {
   overflow: auto;
   display: grid;
-  grid: "avatar text";
+  grid-template-areas: "avatar text";
   align-content: space-evenly;
   align-items: center;
 }
@@ -145,7 +144,6 @@ Modal
 
 .modal-content hr {
   margin: 30px auto;
-  padding: 10px auto;
   width: 85%;
   color: rgb(138, 143, 147);
   font-weight: 100;
