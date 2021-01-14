@@ -17,9 +17,11 @@ body {
 }
 
 h1 {
-  margin: 50px auto 50px 9%;
+  margin: 50px auto 50px 3%;
   color: rgb(74, 74, 74);
   text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 /*----------------------------------- 
@@ -65,7 +67,7 @@ Modal
   display: grid;
   max-width: 1700px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(30%, auto));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
   grid-gap: 35px;
   align-content: space-evenly;
   margin: auto;
