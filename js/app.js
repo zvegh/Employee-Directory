@@ -18,6 +18,7 @@ $.ajax({
       console.log(data);
     }
   });
+  
   */
 
 // Fetch data from API
