@@ -9,6 +9,8 @@ const modalColose = document.querySelector('.modal-close');
 // Jquery
 // had to import jquery because the street value in the modal was [object Object]
 // then ${street} => ${street.name} ${street.number}
+
+/*
 $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
@@ -16,6 +18,7 @@ $.ajax({
       console.log(data);
     }
   });
+  */
 
 // Fetch data from API
 fetch(urlAPI)
